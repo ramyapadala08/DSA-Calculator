@@ -1,0 +1,15 @@
+Expression: AB+C*
+Conversion Type: Postfix to Infix
+--------------------------------------------------
+Expression: AB+C*
+Conversion Type: Postfix to Infix
+--------------------------------------------------
+--- Session: Tue May 13 12:24:50 IST 2025 ---
+Expression: ab+
+a = 2
+b = 3
+------------------------------
+
+--- Session Start: Wed May 14 12:10:53 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -

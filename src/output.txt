@@ -1,0 +1,465 @@
+
+====== Session Started at 2025-05-07 01:55:20 ======
+Tree for: a + b * c (infix)
+            c
+      *
+            b
++
+      a
+====== Session End ======
+--- Session: Wed May 07 09:22:58 IST 2025 ---
+Result: 2
+
+
+====== Session Started at 2025-05-07 09:31:47 ======
+Tree for: 3 4 + 5 * (postfix)
+           * 
+/\ 
+|      |
+      +       5 
+/\         
+|    |          
+   3    4           
+====== Session End ======
+
+====== Session Started at 2025-05-07 09:36:51 ======
+Tree for: 3 4 + 5 * (postfix)
+       *
+    /__ __\
+   +       5
+  / \
+ 3   4
+
+====== Session End ======
+--- Session Start: Wed May 07 11:20:28 IST 2025 ---
+Expression Type: prefix
+Expression: * + 6 9 - 3 1
+Invalid expression type. Please use postfix, prefix, or infix.
+---------------------------
+
+--- Session: Wed May 07 11:40:44 IST 2025 ---
+Result: 5
+
+--- Conversion Result ---
+a+ b 
+
+--- Session Start: Wed May 07 11:46:30 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -
+Invalid expression type. Please use postfix, prefix, or infix.
+---------------------------
+
+--- Session Start: Wed May 07 11:48:29 IST 2025 ---
+Expression Type: postfix
+Expression: 2 3 +
+Invalid expression type. Please use postfix, prefix, or infix.
+---------------------------
+
+--- Session Start: Wed May 07 11:48:48 IST 2025 ---
+Expression Type: postfix
+Expression: 512+4*+3-
+Invalid expression type. Please use postfix, prefix, or infix.
+---------------------------
+
+--- Session Start: Wed May 07 11:51:04 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -
+Invalid expression type. Please use postfix, prefix, or infix.
+---------------------------
+
+--- Session Start: Wed May 07 11:52:53 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -
+Postfix to Infix Conversion:
+Push 5 -> Stack: [5]
+Push 1 -> Stack: [5, 1]
+Push 2 -> Stack: [5, 1, 2]
+Apply + to 1, 2 -> Push (1+2) -> Stack: [5, (1+2)]
+Push 4 -> Stack: [5, (1+2), 4]
+Apply * to (1+2), 4 -> Push ((1+2)*4) -> Stack: [5, ((1+2)*4)]
+Apply + to 5, ((1+2)*4) -> Push (5+((1+2)*4)) -> Stack: [(5+((1+2)*4))]
+Push 3 -> Stack: [(5+((1+2)*4)), 3]
+Apply - to (5+((1+2)*4)), 3 -> Push ((5+((1+2)*4))-3) -> Stack: [((5+((1+2)*4))-3)]
+Infix Expression: ((5+((1+2)*4))-3)
+
+Postfix Evaluation Steps:
+Push 5.0 -> Stack: [5.0]
+Push 1.0 -> Stack: [5.0, 1.0]
+Push 2.0 -> Stack: [5.0, 1.0, 2.0]
+Apply + to 1.0, 2.0 -> Result: 3.0 -> Stack: [5.0, 3.0]
+Push 4.0 -> Stack: [5.0, 3.0, 4.0]
+Apply * to 3.0, 4.0 -> Result: 12.0 -> Stack: [5.0, 12.0]
+Apply + to 5.0, 12.0 -> Result: 17.0 -> Stack: [17.0]
+Push 3.0 -> Stack: [17.0, 3.0]
+Apply - to 17.0, 3.0 -> Result: 14.0 -> Stack: [14.0]
+Final Result: 14.0
+---------------------------
+
+--- Conversion Result ---
+abcd^e-fgh*+^*+i-
+
+--- Session: Wed May 07 12:14:47 IST 2025 ---
+Result: 2
+
+--- Conversion Result ---
+abc*+
+
+--- Conversion Result ---
+abc*+
+
+--- Session Start: Thu May 08 12:16:25 IST 2025 ---
+Expression Type: infix
+Expression: a+b*c
+--- Session End ---
+---------------------------
+Expression Type: infix
+Expression: a+b*c
+Converted Expression: abc*+
+--- Session End ---
+---------------------------
+
+--- Session Start: Thu May 08 12:24:34 IST 2025 ---
+Expression Type: infix
+Expression: (a+b)*(c-d)
+--- Session End ---
+---------------------------
+Expression Type: infix
+Expression: (a+b)*(c-d)
+Converted Expression: *+ab-cd
+--- Session End ---
+---------------------------
+
+
+--- Session Start: Thu May 08 12:33:44 IST 2025 ---
+Expression Type: infix
+Expression: (a+b)*(c-d)
+Converted Expression: *+ab-cd
+--- Session End ---
+---------------------------
+(a+b)*(c-d)--- Session Start: Thu May 08 12:38:54 IST 2025 ---
+Expression Type: prefix
+Expression: *+ab-cd
+Converted Expression: (a+b)*(c-d)
+--- Session End ---
+---------------------------
+(a+b)*(c-d)--- Session Start: Thu May 08 12:42:43 IST 2025 ---
+Expression Type: postfix
+Expression: ab+cd-*
+Converted Expression: (a+b)*(c-d)
+--- Session End ---
+---------------------------
+--- Session Start: Thu May 08 12:45:04 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -
+Postfix to Infix Conversion:
+Push 5 -> Stack: [5]
+Push 1 -> Stack: [5, 1]
+Push 2 -> Stack: [5, 1, 2]
+Apply + to 1, 2 -> Push (1+2) -> Stack: [5, (1+2)]
+Push 4 -> Stack: [5, (1+2), 4]
+Apply * to (1+2), 4 -> Push ((1+2)*4) -> Stack: [5, ((1+2)*4)]
+Apply + to 5, ((1+2)*4) -> Push (5+((1+2)*4)) -> Stack: [(5+((1+2)*4))]
+Push 3 -> Stack: [(5+((1+2)*4)), 3]
+Apply - to (5+((1+2)*4)), 3 -> Push ((5+((1+2)*4))-3) -> Stack: [((5+((1+2)*4))-3)]
+Infix Expression: ((5+((1+2)*4))-3)
+
+Postfix Evaluation Steps:
+Push 5.0 -> Stack: [5.0]
+Push 1.0 -> Stack: [5.0, 1.0]
+Push 2.0 -> Stack: [5.0, 1.0, 2.0]
+Apply + to 1.0, 2.0 -> Result: 3.0 -> Stack: [5.0, 3.0]
+Push 4.0 -> Stack: [5.0, 3.0, 4.0]
+Apply * to 3.0, 4.0 -> Result: 12.0 -> Stack: [5.0, 12.0]
+Apply + to 5.0, 12.0 -> Result: 17.0 -> Stack: [17.0]
+Push 3.0 -> Stack: [17.0, 3.0]
+Apply - to 17.0, 3.0 -> Result: 14.0 -> Stack: [14.0]
+Final Result: 14.0
+---------------------------
+
+--- Session: Thu May 08 12:51:16 IST 2025 ---
+Result: 14
+
+--- Session: Thu May 08 13:10:41 IST 2025 ---
+Result: 8
+
+
+====== Session Started at 2025-05-08 13:16:15 ======
+Tree for: 3 4 + 5 * (postfix)
+       *
+    /__ __\
+   +       5
+  / \
+ 3   4
+
+====== Session End ======
+
+====== Session Started at 2025-05-08 13:19:57 ======
+Tree for: 4 + 8 * 6 (infix)
+       +
+    /__ __\
+   4       *
+          / \
+         8   6
+
+====== Session End ======
+ERROR: Unbalanced parentheses in infix expression at Mon May 12 20:24:53 IST 2025
+---------------------------
+ERROR: Unbalanced parentheses in infix expression at Mon May 12 20:24:53 IST 2025
+---------------------------
+abcd^e-fgh*+^*+i---- Session Start: Mon May 12 20:27:01 IST 2025 ---
+Expression Type: Postfix
+Expression: a+b*(c^d-e)^(f+g*h)-i
+Converted Expression: abcd^e-fgh*+^*+i-
+--- Session End ---
+---------------------------
+--- Session Start: Mon May 12 20:31:30 IST 2025 ---
+Expression Type: Postfix
+Expression: a+b*(c^d-e)^(f+g*h)-i
+Converted Expression: abcd^e-fgh*+^*+i-
+--- Session End ---
+---------------------------
+--- Session: Mon May 12 21:12:14 IST 2025 ---
+Result: 8
+
+--- Session: Mon May 12 22:09:11 IST 2025 ---
+Result: 8
+----- Session End -------
+------------------------------
+
+--- Session Start: Tue May 13 09:07:55 IST 2025 ---
+Expression Type: postfix
+Expression: 2 3 4 * +
+Postfix to Infix Conversion:
+Push 2 -> Stack: [2]
+Push 3 -> Stack: [2, 3]
+Push 4 -> Stack: [2, 3, 4]
+Apply * to 3, 4 -> Push (3*4) -> Stack: [2, (3*4)]
+Apply + to 2, (3*4) -> Push (2+(3*4)) -> Stack: [(2+(3*4))]
+Infix Expression: (2+(3*4))
+
+Postfix Evaluation Steps:
+Push 2.0 -> Stack: [2.0]
+Push 3.0 -> Stack: [2.0, 3.0]
+Push 4.0 -> Stack: [2.0, 3.0, 4.0]
+Apply * to 3.0, 4.0 -> Result: 12.0 -> Stack: [2.0, 12.0]
+Apply + to 2.0, 12.0 -> Result: 14.0 -> Stack: [14.0]
+Final Result: 14.0
+---------------------------
+
+Prefix to Postfix Conversion Steps:
+Step: + C D -> CD+
+Step: + A B -> AB+
+Step: * AB+ CD+ -> AB+CD+*
+--- Session: Tue May 13 09:12:57 IST 2025 ---
+Conversion Type: Prefix to Postfix
+Input Expression: *+AB+CD
+Converted Expression: AB+CD+*
+Steps:
+Prefix to Postfix Conversion Steps:
+Step: + C D -> CD+
+Step: + A B -> AB+
+Step: * AB+ CD+ -> AB+CD+*
+--------------------------------------------------
+Prefix to Infix Conversion Steps:
+Step: + C D -> (C + D)
+Step: + A B -> (A + B)
+Step: * (A + B) (C + D) -> ((A + B) * (C + D))
+--- Session: Tue May 13 09:13:53 IST 2025 ---
+Conversion Type: Prefix to Infix
+Input Expression: *+AB+CD
+Converted Expression: ((A + B) * (C + D))
+Steps:
+Prefix to Infix Conversion Steps:
+Step: + C D -> (C + D)
+Step: + A B -> (A + B)
+Step: * (A + B) (C + D) -> ((A + B) * (C + D))
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: A + B -> A+B
+Step: C + D -> C+D
+Step: C+D * C+D -> C+D*C+D
+--- Session: Tue May 13 09:14:51 IST 2025 ---
+Conversion Type: Infix to Postfix
+Input Expression: (A+B)*(C+D)
+Converted Expression: C+D*C+D
+Steps:
+Infix to Postfix Conversion Steps:
+Step: A + B -> A+B
+Step: C + D -> C+D
+Step: C+D * C+D -> C+D*C+D
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: DC+ * BA+ -> DC+BA+*
+--- Session: Tue May 13 09:24:37 IST 2025 ---
+Conversion Type: Infix to Prefix
+Input Expression: (A+B)*(C+D)
+Converted Expression: *+AB+CD
+Steps:
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: DC+ * BA+ -> DC+BA+*
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--- Session: Tue May 13 09:37:07 IST 2025 ---
+Conversion Type: Infix to Prefix
+Input Expression: (A+B)*(C+D)
+Converted Expression: *+AB+AB
+Steps:
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--- Session: Tue May 13 09:51:26 IST 2025 ---
+Conversion Type: Infix to Prefix
+Input Expression: (A+B)*(C+D)
+Converted Expression: *+AB+AB
+Steps:
+Infix to Prefix Conversion Steps (via reversed infix -> postfix):
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--- Session: Tue May 13 09:52:22 IST 2025 ---
+Conversion Type: Infix to Prefix
+Input Expression: (A+B)*(C+D)
+Converted Expression: *+AB+AB
+Steps:
+Infix to Prefix Conversion Steps (via reversed infix -> postfix):
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--------------------------------------------------
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+--- Session: Tue May 13 10:04:14 IST 2025 ---
+Conversion Type: Infix to Prefix
+Input Expression: (A+B)*(C+D)
+Converted Expression: *+AB+AB
+Steps:
+Infix to Prefix Conversion Steps (via reversed infix -> postfix):
+Infix to Postfix Conversion Steps:
+Step: D + C -> DC+
+Step: B + A -> BA+
+Step: BA+ * BA+ -> BA+BA+*
+Final Prefix Expression: *+AB+AB
+--------------------------------------------------
+Prefix to Infix Conversion Steps:
+Step: * B C -> (B * C)
+Step: + A (B * C) -> (A + (B * C))
+--- Session: Tue May 13 10:04:46 IST 2025 ---
+Conversion Type: Prefix to Infix
+Input Expression: +A*BC
+Converted Expression: (A + (B * C))
+Steps:
+Prefix to Infix Conversion Steps:
+Step: * B C -> (B * C)
+Step: + A (B * C) -> (A + (B * C))
+--------------------------------------------------
+--- Session Start: Tue May 13 10:18:32 IST 2025 ---
+Result: 8
+----- Session End -------
+------------------------------
+
+--- Session Start: Tue May 13 12:07:14 IST 2025 ---
+Result: 2
+----- Session End -------
+------------------------------
+
+
+====== Session Started at 2025-05-13 12:08:59 ======
+Tree for: 3 4 + 5 * (postfix)
+       *
+    /__ __\
+   +       5
+  / \
+ 3   4
+
+====== Session End ======
+--- Session Start: Tue May 13 12:11:38 IST 2025 ---
+Expression Type: prefix
+Expression: * + 5 2 - 8 3
+Prefix to Infix Conversion:
+Push 3 -> Stack: [3]
+Push 8 -> Stack: [3, 8]
+Apply - to 8, 3 -> Push (8-3) -> Stack: [(8-3)]
+Push 2 -> Stack: [(8-3), 2]
+Push 5 -> Stack: [(8-3), 2, 5]
+Apply + to 5, 2 -> Push (5+2) -> Stack: [(8-3), (5+2)]
+Apply * to (5+2), (8-3) -> Push ((5+2)*(8-3)) -> Stack: [((5+2)*(8-3))]
+Infix Expression: ((5+2)*(8-3))
+Converted to Postfix: 5 2 + 8 3 - *
+
+Postfix Evaluation Steps:
+Push 5.0 -> Stack: [5.0]
+Push 2.0 -> Stack: [5.0, 2.0]
+Apply + to 5.0, 2.0 -> Result: 7.0 -> Stack: [7.0]
+Push 8.0 -> Stack: [7.0, 8.0]
+Push 3.0 -> Stack: [7.0, 8.0, 3.0]
+Apply - to 8.0, 3.0 -> Result: 5.0 -> Stack: [7.0, 5.0]
+Apply * to 7.0, 5.0 -> Result: 35.0 -> Stack: [35.0]
+Final Result: 35.0
+---------------------------
+
+Postfix to Infix Conversion Steps:
+Step: A + B -> (A + B)
+Step: (A + B) * C -> ((A + B) * C)
+--- Session: Tue May 13 12:14:31 IST 2025 ---
+Conversion Type: Postfix to Infix
+Input Expression: AB+C*
+Converted Expression: ((A + B) * C)
+Steps:
+Postfix to Infix Conversion Steps:
+Step: A + B -> (A + B)
+Step: (A + B) * C -> ((A + B) * C)
+--------------------------------------------------
+--- Session: Tue May 13 12:24:52 IST 2025 ---
+Error: Insufficient operands.
+------------------------------
+
+--- Session Start: Wed May 14 12:10:53 IST 2025 ---
+Expression Type: postfix
+Expression: 5 1 2 + 4 * + 3 -
+Postfix to Infix Conversion:
+Push 5 -> Stack: [5]
+Push 1 -> Stack: [5, 1]
+Push 2 -> Stack: [5, 1, 2]
+Apply + to 1, 2 -> Push (1+2) -> Stack: [5, (1+2)]
+Push 4 -> Stack: [5, (1+2), 4]
+Apply * to (1+2), 4 -> Push ((1+2)*4) -> Stack: [5, ((1+2)*4)]
+Apply + to 5, ((1+2)*4) -> Push (5+((1+2)*4)) -> Stack: [(5+((1+2)*4))]
+Push 3 -> Stack: [(5+((1+2)*4)), 3]
+Apply - to (5+((1+2)*4)), 3 -> Push ((5+((1+2)*4))-3) -> Stack: [((5+((1+2)*4))-3)]
+Infix Expression: ((5+((1+2)*4))-3)
+
+Postfix Evaluation Steps:
+Push 5.0 -> Stack: [5.0]
+Push 1.0 -> Stack: [5.0, 1.0]
+Push 2.0 -> Stack: [5.0, 1.0, 2.0]
+Apply + to 1.0, 2.0 -> Result: 3.0 -> Stack: [5.0, 3.0]
+Push 4.0 -> Stack: [5.0, 3.0, 4.0]
+Apply * to 3.0, 4.0 -> Result: 12.0 -> Stack: [5.0, 12.0]
+Apply + to 5.0, 12.0 -> Result: 17.0 -> Stack: [17.0]
+Push 3.0 -> Stack: [17.0, 3.0]
+Apply - to 17.0, 3.0 -> Result: 14.0 -> Stack: [14.0]
+Final Result: 14.0
+---------------------------
+
